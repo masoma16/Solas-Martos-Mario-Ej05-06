@@ -1,0 +1,59 @@
+<!--
+05-06 Imágenes
+En esta práctica debes ingresar varias imágenes en una página web y comparar el tiempo de carga hasta minimizarlo por completo.
+Utiliza sitios libres de derechos para descargar 12 imágenes con la resolución más alta posible. Incluye formatos JPG, GIF y PNG. 
+Crear una página web para organizar las imágenes usando el modelo flexbox, de modo que quepan dos imágenes por ancho.Obtendrás 6 filas de dos imágenes por fila. NO CAMBIAR EL TAMAÑO ORIGINAL.
+Agregue etiquetas ALT a todas las imágenes. Respeta el copyleft utilizando las etiquetas apropiadas para dar el crédito necesario al autor de la imagen.
+Crear un proyecto en Github y publicar la página. Siga el siguiente manual:https://docs.github.com/es/pages/getting-started-with-github-pages/creating-a-github-pages-site
+Usar herramientas de Google (https://pagespeed.web.dev/) para comprobar el tiempo de carga de la página, crear una tabla e indicar el tamaño medio, formato de imagen utilizado y tiempo de carga.Agregue la tabla a la página web.
+COPIAR LA PÁGINA WEB EN OTRA.Optimiza el tamaño de las imágenes. Utiliza etiquetas PICTURE, SRCSET y MEDIA para incluir distintos tamaños y formatos de imagen.  Realiza nuevamente la prueba de tiempo de carga y actualiza los datos de la tabla.
+COPIA LA ÚLTIMA PÁGINA WEB EN OTRA.Ahora seguiremos los consejos de la página de Google. en cuanto a formatos.Puedes utilizar la herramienta gráfica que quieras para configurarlos, a modo de ejemplo aquí tienes varias: https://www.dosmedia.com/tratamiento-de-imagenes-para-tu-pagina-web/
+Aplicación de Estilos CSS:
+Usar object-fit y object-position para asegurar que las imágenes se muestren correctamente en su contenedor.
+Implementar srcset y sizes en las imágenes para hacerlas responsivas en diferentes tamaños de pantalla.
+Utilizar la etiqueta <picture> para algunas imágenes, ofreciendo diferentes formatos según el navegador.
+Efectos Visuales Adicionales:
+Aplicar diferentes filters a algunas imágenes para cambiar su apariencia (por ejemplo, sepia, grayscale).
+Utilizar opacity en algunas imágenes para crear un efecto de transparencia.
+Implementar clip-path en al menos una imagen para darle una forma única.
+Añadir border-image a alguna imagen para mostrar cómo se puede usar una imagen como borde.
+Responsividad:
+Asegurarse de que la galería se vea bien en diferentes tamaños de pantalla, incluyendo teléfonos móviles y tablets.
+Interactividad:
+Agregar interactividad con JavaScript, como cambiar la opacidad o el filtro al pasar el mouse sobre las imágenes
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 Tema 5 Mario Solas</title>
+    <style>
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        img {
+            flex: 0 0 calc(50% - 10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <img src="https://raw.githubusercontent.com/masoma16/Solas-Martos-Mario-Ej05-06/main/gif1.gif" alt="Gif 1">
+        <img src="https://raw.githubusercontent.com/masoma16/Solas-Martos-Mario-Ej05-06/main/gif2.gif" alt="Gif 2">
+        <img src="https://raw.githubusercontent.com/masoma16/Solas-Martos-Mario-Ej05-06/main/img12.jpg" alt="Imagen 1">
+        <img src="https://raw.githubusercontent.com/masoma16/Solas-Martos-Mario-Ej05-06/main/img2.jpg" alt="Imagen 2">
+        <img src="https://raw.githubusercontent.com/masoma16/Solas-Martos-Mario-Ej05-06/main/img3.jpg" alt="Imagen 3">
+        <img src="https://raw.githubusercontent.com/masoma16/Solas-Martos-Mario-Ej05-06/main/img4.jpg" alt="Imagen 4">
+        <img src="https://raw.githubusercontent.com/masoma16/Solas-Martos-Mario-Ej05-06/main/img5.jpg" alt="Imagen 5">
+        <img src="https://raw.githubusercontent.com/masoma16/Solas-Martos-Mario-Ej05-06/main/img6.jpg" alt="Imagen 6">
+        <img src="https://raw.githubusercontent.com/masoma16/Solas-Martos-Mario-Ej05-06/main/img7.jpg" alt="Imagen 7">
+        <img src="https://raw.githubusercontent.com/masoma16/Solas-Martos-Mario-Ej05-06/main/img8.jpg" alt="Imagen 8">
+        <img src="https://raw.githubusercontent.com/masoma16/Solas-Martos-Mario-Ej05-06/main/img9.jpg" alt="Imagen 9">
+        <img src="https://raw.githubusercontent.com/masoma16/Solas-Martos-Mario-Ej05-06/main/img10.jpg" alt="Imagen 10">
+    </div>
+</body>
+</html>
